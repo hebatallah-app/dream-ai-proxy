@@ -1,1 +1,10 @@
-{ "version": 2 }
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/interpret.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/interpret", "dest": "/api/interpret.js" }
+  ]
+}
+
